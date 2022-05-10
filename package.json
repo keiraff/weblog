@@ -8,6 +8,7 @@
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
     "cable_ready": "^5.0.0-pre9",
+    "chart.js": "^3.7.1",
     "sortablejs": "^1.15.0",
     "stimulus": "^3.0.1",
     "stimulus_reflex": "3.4.1",

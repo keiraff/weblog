@@ -65,3 +65,5 @@ gem 'friendly_id', '~> 5.4.0'
 
 gem 'pry-rails', :group => :development
 gem 'pry-nav'
+
+gem 'impressionist'

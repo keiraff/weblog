@@ -19,6 +19,8 @@ require("channels")
 const Trix = require("trix")
 require("@rails/actiontext")
 
+const Chart = require('chart.js')
+
 Trix.config.blockAttributes.heading1.tagname="h3";
 
 import Sortable from 'sortablejs';
@@ -36,7 +38,6 @@ document.addEventListener('turbolinks:load', () => {
 
     document.addEventListener('click', () => {
         if (!event.target.matches('.cancel')) return;
-
         event.preventDefault();
 
         let element = event.target.closest('.paragraph-form')
