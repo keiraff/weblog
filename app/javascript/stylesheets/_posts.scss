@@ -1,0 +1,29 @@
+.readers.home.index {
+  .post-card {
+    height: 500px;
+
+    .header-image {
+      height: 270px;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.readers.posts.show {
+  .post-card {
+    .header-image {
+      height: 400px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .image-element {
+      text-align: center;
+
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}

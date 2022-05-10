@@ -18,7 +18,7 @@ module Authors
     # PATCH/PUT /elements/1
     def update
       @element.update(element_params)
-      redirect_to edit_post_path(@element.post)
+      #redirect_to edit_post_path(@element.post)
     end
 
     # DELETE /elements/1
@@ -30,7 +30,7 @@ module Authors
     private
 
     def set_post
-      @post = current_author.posts.find(params[:post_id])
+      @post = current_author.posts.friendly.find(params[:post_id])
     end
 
     # Use callbacks to share common setup or constraints between actions.

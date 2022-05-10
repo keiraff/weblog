@@ -56,3 +56,12 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "stimulus_reflex", "~> 3.4"
+
+gem "optimism", "~> 0.5.0"
+
+gem "cable_ready", "~>5.0.0-pre9"
+
+gem 'friendly_id', '~> 5.4.0'
+
+gem 'pry-rails', :group => :development
+gem 'pry-nav'

@@ -16,8 +16,10 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-require("trix")
+const Trix = require("trix")
 require("@rails/actiontext")
+
+Trix.config.blockAttributes.heading1.tagname="h3";
 
 import Sortable from 'sortablejs';
 
@@ -43,9 +45,9 @@ document.addEventListener('turbolinks:load', () => {
         element.previousElementSibling.classList.remove('d-none')
     })
 
-    if(document.getElementById('elements')) {
-        var sortable_elements=document.getElementById('elements');
-        var sortable=Sortable.create(sortable_elements, {animation: 150})
+    if (document.getElementById('elements')) {
+        var sortable_elements = document.getElementById('elements');
+        var sortable = Sortable.create(sortable_elements, {animation: 150})
     }
 })
 
